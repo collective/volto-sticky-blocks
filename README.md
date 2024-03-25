@@ -2,11 +2,9 @@
 
 Configure sticky blocks by path.
 
-Place your sticky blocks wherever you like using <StickyBlocks/> component.
+Place your sticky blocks wherever you like using `jsx<StickyBlocks/>` component.
 
 > **Note**: It requires [collective.volto.stickyblocks](https://github.com/collective/collective.volto.stickyblocks) installed in the backend.
->
-
 
 ## Installation
 
@@ -25,7 +23,6 @@ import { StickyBlocks } from 'volto-sticky-blocks';
 <StickyBlocks/>
 ...
 ```
-
 
 ## Translations
 
