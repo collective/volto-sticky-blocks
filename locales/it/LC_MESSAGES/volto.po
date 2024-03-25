@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language: \n"
+"Language-Team: \n"
+"Content-Type: \n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. Default: "Add path"
+#: components/manage/widgets/StickyBlocksConfigurationWidget/StickyBlocksConfigurationWidget
+msgid "stickyblocks-add-rootpath"
+msgstr "Aggiungi una radice di navigazione"
+
+#. Default: "Blocchi"
+#: components/manage/widgets/StickyBlocksConfigurationWidget/StickyBlocksConfigurationForm
+msgid "stickyblocks-blocks"
+msgstr "Blocchi"
+
+#. Default: "Delete"
+#: components/manage/widgets/StickyBlocksConfigurationWidget/StickyBlocksConfigurationWidget
+msgid "stickyblocks-delete-button"
+msgstr "Elimina configurazione"
+
+#. Default: "Select a path"
+#: components/manage/widgets/StickyBlocksConfigurationWidget/StickyBlocksConfigurationWidget
+msgid "stickyblocks-emptyActivePath"
+msgstr "Seleziona una radice di navigazione"
+
+#. Default: "Root path"
+#: components/manage/widgets/StickyBlocksConfigurationWidget/StickyBlocksConfigurationWidget
+msgid "stickyblocks-rootpath"
+msgstr "Radice di navigazione"

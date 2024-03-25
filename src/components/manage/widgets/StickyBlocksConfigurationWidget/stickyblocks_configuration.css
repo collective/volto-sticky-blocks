@@ -1,0 +1,24 @@
+.stickyblocks-configuration-widget .menu-blocks-container {
+  padding: 2em;
+}
+
+#stickyblocks-configuration {
+  margin: 1em 0;
+}
+
+.stickyblocks-configuration-widget .ui.menu.path-menu .item button.mini {
+  font-size: 0.78571429rem;
+}
+
+.stickyblocks-configuration-widget #path-delete.field.delete .column,
+.stickyblocks-configuration-widget #menu-delete.field.delete .column {
+  justify-content: center;
+  padding: 1em 0;
+}
+
+.stickyblocks-configuration-widget button#delete-path,
+.stickyblocks-configuration-widget button#delete-menuitem {
+  display: inline-block;
+  flex-grow: 0;
+  align-self: center;
+}
