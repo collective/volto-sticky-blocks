@@ -23,7 +23,7 @@ const messages = defineMessages({
   emptyActivePath: {
     id: 'stickyblocks-emptyActivePath',
     defaultMessage: 'Select a path',
-  }
+  },
 });
 
 const defaultItem = (title) => ({
@@ -91,7 +91,6 @@ const StickyBlocksConfigurationWidget = ({
 
     handleChangeConfiguration(newConfiguration);
   };
-
 
   const onChangeConfiguration = (index, config) => {
     let newConfiguration = [...configuration];
@@ -184,13 +183,14 @@ const StickyBlocksConfigurationWidget = ({
                         </Form.Field>
                       </Grid.Column>
                       <Grid.Column width={12}>
-                        <Component componentName="StickyBlocksConfigurationForm"
-                            id={`${activeConfigPath}-blocks`}
-                            item={configuration[activeConfigPath]}
-                            onChange={(config) =>
-                              onChangeConfiguration(activeConfigPath, config)
-                            }
-                          />
+                        <Component
+                          componentName="StickyBlocksConfigurationForm"
+                          id={`${activeConfigPath}-blocks`}
+                          item={configuration[activeConfigPath]}
+                          onChange={(config) =>
+                            onChangeConfiguration(activeConfigPath, config)
+                          }
+                        />
                       </Grid.Column>
                     </Grid>
                   ) : (

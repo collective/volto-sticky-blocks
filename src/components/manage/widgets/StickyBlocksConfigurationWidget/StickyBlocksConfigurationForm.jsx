@@ -3,7 +3,7 @@ import { defineMessages, useIntl } from 'react-intl';
 
 import { Form as UIForm, Grid } from 'semantic-ui-react';
 import { isEmpty } from 'lodash';
-import {Form, Sidebar} from '@plone/volto/components';
+import { Form, Sidebar } from '@plone/volto/components';
 import { Portal } from 'react-portal';
 import { v4 as uuid } from 'uuid';
 import config from '@plone/volto/registry';
@@ -13,14 +13,9 @@ const messages = defineMessages({
     id: 'stickyblocks-blocks',
     defaultMessage: 'Blocchi',
   },
-
 });
 
-const StickyBlocksConfigurationForm = ({
-  id,
-  item,
-  onChange,
-}) => {
+const StickyBlocksConfigurationForm = ({ id, item, onChange }) => {
   const defaultBlockId = uuid();
   const intl = useIntl();
 
@@ -59,9 +54,9 @@ const StickyBlocksConfigurationForm = ({
     return () => {
       document
         .querySelector('form.ui.form')
-        .removeEventListener('click', preventClick);
-      document.querySelectorAll('form.ui.form input').forEach((item) => {
-        item.removeEventListener('keypress', preventEnter);
+        ?.removeEventListener('click', preventClick);
+      document.querySelectorAll('form.ui.form input')?.forEach((item) => {
+        item?.removeEventListener('keypress', preventEnter);
       });
     };
   }, []);
@@ -74,34 +69,34 @@ const StickyBlocksConfigurationForm = ({
     });
   };
   return (
-      <>
-        <UIForm.Field inline className="wide" id="menu-blocks">
-          <Grid>
-            <Grid.Row stretched>
-              <Grid.Column width={12}>
-                <div className="wrapper">
-                  <label>{intl.formatMessage(messages.blocks)}</label>
-                </div>
-              </Grid.Column>
-            </Grid.Row>
-            <Grid.Row stretched>
-              <Grid.Column width={12}>
-                <div className="menu-blocks-container">
-                  <Form
-                    key={id}
-                    formData={item}
-                    visual={true}
-                    hideActions
-                    onChangeFormData={onChangeFormBlocks}
-                  />
-                </div>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </UIForm.Field>
-        <Portal node={document.getElementById('sidebar')}>
-          <Sidebar />
-        </Portal>
+    <>
+      <UIForm.Field inline className="wide" id="menu-blocks">
+        <Grid>
+          <Grid.Row stretched>
+            <Grid.Column width={12}>
+              <div className="wrapper">
+                <label>{intl.formatMessage(messages.blocks)}</label>
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+          <Grid.Row stretched>
+            <Grid.Column width={12}>
+              <div className="menu-blocks-container">
+                <Form
+                  key={id}
+                  formData={item}
+                  visual={true}
+                  hideActions
+                  onChangeFormData={onChangeFormBlocks}
+                />
+              </div>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+      </UIForm.Field>
+      <Portal node={document.getElementById('sidebar')}>
+        <Sidebar />
+      </Portal>
     </>
   );
 };
