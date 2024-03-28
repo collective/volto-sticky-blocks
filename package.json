@@ -1,6 +1,6 @@
 {
   "name": "volto-sticky-blocks",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "volto-sticky-blocks: Volto add-on",
   "main": "src/index.js",
   "license": "MIT",

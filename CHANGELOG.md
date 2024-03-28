@@ -1,5 +1,17 @@
 
 
+## [2.1.0](https://github.com/collective/volto-sticky-blocks/compare/2.0.0...2.1.0) (2024-03-28)
+
+
+### Features
+
+* added container prop to StickyBlocks component and fix view ([9fe1e4c](https://github.com/collective/volto-sticky-blocks/commit/9fe1e4c5ebef052a121225e408076c6bcadc0866))
+
+
+### Maintenance
+
+* fix release-it ([882ee6c](https://github.com/collective/volto-sticky-blocks/commit/882ee6cfa27dac0ee8cc12d6670b699c9ccb4f8b))
+
 ## 2.0.0 (2024-03-28)
 
 
