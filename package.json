@@ -23,7 +23,10 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.22.15",
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@plone/scripts": "^3.3.2",
+    "@release-it/conventional-changelog": "^2.0.1",
     "eslint": "8.49.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-config-react-app": "7.0.1",
