@@ -22,3 +22,6 @@
   flex-grow: 0;
   align-self: center;
 }
+.sticky-blocks .block {
+  margin: 0;
+}
